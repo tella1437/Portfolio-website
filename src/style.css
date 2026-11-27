@@ -14,7 +14,7 @@ body {
 .navbar {
     width: 100%;
     height: 70px;
-    background-color: #fbc3b9;
+    background-color: #fff0ec;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,6 +37,7 @@ body {
     background-color: #f0f1f4;
     padding: 15px 25px;
     border-radius: 50px;
+    border:1px solid #4f252a;
     
 }
 
@@ -59,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    
 }
 
 
@@ -70,6 +72,7 @@ body {
     background-color: #f0f1f4;
     font-size: 20px;
     cursor: pointer;
+     border:1px solid #4f252a;
 }
 
 
@@ -82,6 +85,7 @@ body {
     font-size: 13px;
     font-weight: bold;
     transition: 0.3s;
+     border:1px solid #4f252a;
 }
 
 .hire-btn:hover {
@@ -120,7 +124,7 @@ body {
     justify-content: center;
     gap: 35px;
     padding: 70px 10%;
-    background-color:#fbc3b9 ;
+    background-color:#f9d6d0 ;
 }
 
 
@@ -238,4 +242,121 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+body {
+    background-color: #ffffff;
+    color: #222222;
+    transition: 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .about-section {
+    background-color: #121212;
+}
+
+/* =========================
+   COMPLETE DARK MODE
+========================= */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode .logo {
+    color: #ffffff;
+}
+
+/* Navigation links */
+body.dark-mode .nav-links {
+    background-color: #303030;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #fbc3b9;
+}
+
+/* Theme button */
+body.dark-mode .theme-btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Hire Me button */
+body.dark-mode .hire-btn {
+    background-color: white;
+    color: #4f252a;
+}
+
+body.dark-mode .hire-btn:hover {
+    background-color: #ffffff;
+}
+
+/* About section */
+body.dark-mode .about-section {
+    background-color: #121212;
+}
+
+body.dark-mode .about-content h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .heading-line {
+    background-color: #fbc3b9;
+}
+
+body.dark-mode .about-content p {
+    color: #d1d1d1;
+}
+
+/* Core identity */
+body.dark-mode .identity-section h4 {
+    color:white;
+}
+
+body.dark-mode .identity-badges span {
+    background-color: #292929;
+    border: 1px solid #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .identity-badges span:hover {
+    background-color: #164e73;
+    color: #ffffff;
+}
+
+/* Smooth transition */
+body,
+.navbar,
+.nav-links,
+.about-section,
+.identity-badges span,
+.theme-btn,
+.hire-btn {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
 

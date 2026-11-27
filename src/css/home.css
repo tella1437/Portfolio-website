@@ -1,0 +1,111 @@
+
+.home-section {
+    min-height: 90vh;
+    padding: 80px 10%;
+    background-color: #fff0ec;
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.home-greeting {
+    color: #704b4f;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    color: #4f252a;
+    margin-bottom: 12px;
+}
+
+.home-content h2 {
+    font-size: 30px;
+    color: #704b4f;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    font-size: 17px;
+    color: #704b4f;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.home-buttons a {
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-btn {
+    background-color: #4f252a;
+    color: white;
+}
+
+.contact-btn {
+    border: 2px solid #4f252a;
+    color: #4f252a;
+}
+
+.project-btn:hover {
+    background-color: #704b4f;
+}
+
+.contact-btn:hover {
+    background-color: #4f252a;
+    color: white;
+}
+
+/* Dark mode */
+
+body.dark-mode .home-section {
+    background-color: #181818;
+}
+
+body.dark-mode .home-content h1 {
+    color: white;
+}
+
+body.dark-mode .home-content h2,
+body.dark-mode .home-greeting,
+body.dark-mode .home-description {
+    color: #ccc;
+}
+
+body.dark-mode .contact-btn {
+    color: white;
+    border-color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content h2 {
+        font-size: 23px;
+    }
+
+    .home-description {
+        font-size: 15px;
+    }
+}
